@@ -232,6 +232,7 @@ a {
 /* About */
 .about {
   padding: 53px 0;
+  background-color: #fffaf5;
 }
 .about-title {
   margin-bottom: 15px;
@@ -358,4 +359,124 @@ a {
   display: inline-block;
   bottom: 0;
   right: 0;
+}
+/* Features */
+.features {
+  background-color: #fffaf5;
+  padding: 93px 0 55px;
+}
+.features-wrap {
+  display: flex;
+  gap: 85px;
+}
+.features-heading {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 62px;
+}
+.features-desc {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--gray);
+  width: 511px;
+}
+.features-image {
+  position: relative;
+  padding-right: 42px;
+  padding-bottom: 55px;
+}
+.features-image img:nth-child(1) {
+  width: 458px;
+  height: 500px;
+  background-color: #c1dff8;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+}
+.features-image img:nth-child(2) {
+  position: absolute;
+  top: 13px;
+  right: 105px;
+}
+.features-image img:nth-child(3) {
+  position: absolute;
+  top: -16px;
+  right: 55px;
+}
+.features-image img:nth-child(4) {
+  position: absolute;
+  top: 33px;
+  right: 21px;
+}
+.features-image img:nth-child(5) {
+  position: absolute;
+  top: 268px;
+  right: 9px;
+}
+.features-image img:nth-child(6) {
+  position: absolute;
+  top: 336px;
+  right: 61px;
+}
+.features-image img:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.features-row .item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.features-content {
+  margin-top: 52px;
+}
+.features-row {
+  position: relative;
+  margin-top: 52px;
+  display: inline-flex;
+  align-items: center;
+  gap: 56px;
+  padding-bottom: 14px;
+}
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+.icon-desc {
+  font-family: Sora;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+  color: #48496a;
+}
+.sub-desc {
+  font-size: 14px;
+  margin-top: 36px;
+  width: 391px;
+}
+.features-line {
+  width: 100%;
+  background-color: #ffefe7;
+  height: 2px;
+}
+.features-row::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  background-color: #ff5b2e;
+  display: inline-block;
+  width: 95px;
+  height: 2px;
+}
+.features-link {
+  display: inline-block;
+  margin-top: 32px;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff5d31;
 }
