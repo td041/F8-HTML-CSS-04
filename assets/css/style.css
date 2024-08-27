@@ -68,6 +68,22 @@ a {
   height: 50px;
   cursor: pointer;
 }
+/* Box */
+.box {
+  text-align: center;
+}
+
+.box-desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e6085;
+}
+.box-title {
+  margin-top: 15px;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--dark);
+}
 /* Ending Preparing */
 /* Header */
 .header {
@@ -229,10 +245,13 @@ a {
   background-color: #ebebf2;
   margin: 20px 0;
 }
+/* Main */
+.main {
+  background-color: #fffaf5;
+}
 /* About */
 .about {
   padding: 53px 0;
-  background-color: #fffaf5;
 }
 .about-title {
   margin-bottom: 15px;
@@ -362,7 +381,6 @@ a {
 }
 /* Features */
 .features {
-  background-color: #fffaf5;
   padding: 93px 0 55px;
 }
 .features-wrap {
@@ -486,20 +504,6 @@ a {
   padding-bottom: 100px;
   background-color: #fff6ed;
 }
-
-.services-desc {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: #5e6085;
-}
-.services-title {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 52px;
-  font-weight: 700;
-  color: var(--dark);
-}
 .item-title a {
   display: inline-block;
   padding-left: 12px;
@@ -585,4 +589,82 @@ a {
 }
 .services-link i {
   color: #ff5b2e;
+}
+/* Team */
+.team {
+  padding: 130px 0;
+}
+.team-row {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.member-image {
+  width: 234px;
+  height: 299px;
+  display: block;
+  border-radius: 130px;
+}
+.member-name {
+  white-space: nowrap;
+  margin-top: 14px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.member-job {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+}
+.member-content {
+  text-align: center;
+  padding: 34px 0px;
+}
+.team-button .button-outline {
+  margin-top: 48px;
+  border-color: #ff5b2e;
+  color: #ff5b2e;
+  margin: 0 auto;
+}
+.team-button {
+  text-align: center;
+}
+.member-media {
+  position: relative;
+}
+.member-media img:first-child {
+  z-index: 1;
+  position: relative;
+}
+.member-media::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 234px;
+  height: 266px;
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+  border-radius: 130px;
+}
+.media-2::after {
+  background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+.media-3::after {
+  background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+.media-4::after {
+  background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+.decoration {
+  position: absolute;
+  left: -16px;
+}
+.decor-1,
+.decor-3 {
+  bottom: 0;
+}
+.decor-2,
+.decor-4 {
+  top: 33px;
 }
