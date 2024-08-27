@@ -207,12 +207,12 @@ a {
   border-radius: 10px;
   background-color: #ebebf2;
 }
-.box {
+.header-box {
   display: inline-flex;
   gap: 10px;
 }
 .box__desc {
-  font-family: Sora;
+  font-family: var(--Sora);
   font-size: 14px;
   font-weight: 600;
   color: var(--dark);
@@ -446,7 +446,7 @@ a {
   height: 20px;
 }
 .icon-desc {
-  font-family: Sora;
+  font-family: var(--Sora);
   white-space: nowrap;
   font-size: 18px;
   font-weight: 600;
@@ -479,4 +479,110 @@ a {
   font-size: 16px;
   font-weight: 500;
   color: #ff5d31;
+}
+/* Services */
+.services {
+  padding-top: 68px;
+  padding-bottom: 100px;
+  background-color: #fff6ed;
+}
+
+.services-desc {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e6085;
+}
+.services-title {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--dark);
+}
+.item-title a {
+  display: inline-block;
+  padding-left: 12px;
+  font-family: var(--Sora);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.item-title {
+  position: relative;
+}
+.item-title::before {
+  position: absolute;
+  display: inline-block;
+  height: 22px;
+  width: 2px;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(89.89deg, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+.item-sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: 18px;
+  line-height: 24px;
+}
+.item-link {
+  font-family: var(--Sora);
+  font-size: 12px;
+  font-weight: 500;
+  color: #34396a;
+  margin-top: 24px;
+  display: inline-block;
+}
+.services-item + .services-item {
+  margin-top: 24px;
+}
+.services-item {
+  width: 294px;
+  padding: 30px 22px 30px 28px;
+  border: 2px solid #ffbc7a42;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.services-img-column::after {
+  position: absolute;
+  bottom: 101px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 410px;
+  height: 350px;
+  content: "";
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+  border-radius: 10px;
+  display: inline-block;
+}
+.services img {
+  position: relative;
+  z-index: 1;
+  width: 447px;
+  height: 621px;
+}
+.services-row {
+  margin-top: 71px;
+  display: flex;
+  gap: 64px;
+}
+.services-button {
+  margin-top: 45px;
+  border-color: #ff5b2e;
+  color: #ff5b2e;
+}
+.services-img-column {
+  position: relative;
+  text-align: center;
+}
+.services-link {
+  display: inline-flex;
+  gap: 6px;
+  align-items: flex-end;
+}
+.services-link i {
+  color: #ff5b2e;
 }
