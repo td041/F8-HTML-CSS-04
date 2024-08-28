@@ -10,6 +10,7 @@
 }
 body {
   font-family: var(--Poppins);
+  background-color: #fffaf5;
 }
 h1,
 h2,
@@ -93,7 +94,6 @@ a {
 /* Header */
 .header {
   padding: 26px 0 71px;
-  background-color: #fffaf5;
 }
 .header-top {
   display: flex;
@@ -253,10 +253,6 @@ a {
   border-radius: 10px;
   background-color: #ebebf2;
   margin: 20px 0;
-}
-/* Main */
-.main {
-  background-color: #fffaf5;
 }
 /* About */
 .about {
@@ -941,6 +937,7 @@ a {
   font-weight: 400;
   color: var(--gray);
   margin-bottom: 24px;
+  line-height: 30px;
 }
 .blog-item__title {
   font-size: 22px;
@@ -964,4 +961,99 @@ a {
 .blog-item__content {
   text-align: left;
   padding: 28px 7px 0 0;
+}
+/* Footer */
+.footer {
+  margin-top: 65px;
+  background: linear-gradient(to right, #fff6ed 43%, transparent 42%);
+  padding-bottom: 48px;
+}
+.footer-row {
+  margin: 52px 0;
+  display: flex;
+}
+.footer-input {
+  border: none;
+  outline: none;
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 300;
+  padding: 16px 14px 16px 22px;
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+}
+.footer-form {
+  background-color: #ffffff;
+  width: 268px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  border: 1px solid #ff5b2e40;
+  border-radius: 99px;
+}
+.footer-button {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5b2e;
+  color: #ffffff;
+}
+.footer-connect {
+  width: 42%;
+  margin-top: 114px;
+}
+.footer-follow {
+  margin-top: 68px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.footer-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.social-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+}
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+.footer-links {
+  display: flex;
+  gap: 137px;
+  flex: 1;
+  margin: 52px 0 0 130px;
+}
+.footer-block + .footer-block {
+  margin-top: 58px;
+}
+.footer-block + .footer-contact {
+  margin-top: 86px;
+}
+.footer-copyright {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray);
+  text-align: center;
 }
