@@ -52,6 +52,10 @@ a {
   padding: 22px 30px;
   height: 60px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  opacity: 0.7;
 }
 .button-outline {
   display: inline-flex;
@@ -68,6 +72,12 @@ a {
   padding: 18px 32px;
   height: 50px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.button-outline:hover {
+  background-color: #ff5b2e;
+  color: #ffffff;
+  border-color: #ff5b2e;
 }
 /* Box */
 .box {
@@ -109,6 +119,9 @@ a {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
+}
+.navbar ul a:hover {
+  text-decoration: underline;
 }
 .header-button {
   color: var(--dark);
@@ -203,6 +216,8 @@ a {
   color: var(--dark);
   font-size: 16px;
   font-weight: 500;
+}
+.hero-links:hover {
   text-decoration: underline;
 }
 .box-img {
@@ -452,6 +467,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .features-content {
   margin-top: 52px;
@@ -498,10 +514,12 @@ a {
 .features-link {
   display: inline-block;
   margin-top: 32px;
-  text-decoration: underline;
   font-size: 16px;
   font-weight: 500;
   color: #ff5d31;
+}
+.features-link:hover {
+  text-decoration: underline;
 }
 /* Services */
 .services {
@@ -554,6 +572,11 @@ a {
   border: 2px solid #ffbc7a42;
   border-radius: 10px;
   background-color: #ffffff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.services-item:hover {
+  transform: translateY(-7px);
 }
 .services-img-column::after {
   position: absolute;
@@ -670,6 +693,13 @@ a {
 .decor-2,
 .decor-4 {
   top: 33px;
+}
+.member {
+  transition: 1s;
+  cursor: pointer;
+}
+.member:hover {
+  transform: scale(1.1);
 }
 /* Pricing */
 .pricing {
@@ -864,6 +894,12 @@ a {
   height: 54px;
   border-radius: 50%;
   border: 1.5px solid #ffd1c4;
+  transition: 0.5s;
+}
+.reviews-button:hover {
+  color: #ffffff;
+  background: #ff5b2e;
+  border-color: #ff5b2e;
 }
 .reviews-media {
   display: inline-flex;
@@ -962,6 +998,12 @@ a {
   text-align: left;
   padding: 28px 7px 0 0;
 }
+.blog-item {
+  transition: 1s;
+}
+.blog-item:hover {
+  transform: scale(1.05);
+}
 /* Footer */
 .footer {
   margin-top: 65px;
@@ -1003,6 +1045,10 @@ a {
   justify-content: center;
   background-color: #ff5b2e;
   color: #ffffff;
+  transition: 0.6s;
+}
+.footer-button:hover {
+  opacity: 0.8;
 }
 .footer-connect {
   width: 42%;
@@ -1028,10 +1074,16 @@ a {
   justify-content: center;
   align-items: center;
 }
+.social-icon:hover {
+  background-color: #ff5b2e;
+}
 .footer-link {
   font-size: 14px;
   font-weight: 400;
   color: var(--gray);
+}
+a[class="footer-link"]:hover {
+  text-decoration: underline;
 }
 .footer-links__list {
   display: flex;
